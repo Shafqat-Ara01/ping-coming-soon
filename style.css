@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+}
+header img {
+  max-width: 70px;
+  height: auto;
+}
+h1 {
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+  margin-top: 30px;
+}
+h1 span {
+  font-weight: 700;
+  color: hsl(209, 33%, 12%);
+}
+p {
+  margin-top: 15px;
+  color: hsl(209, 33%, 12%);
+  font-weight: 300;
+}
+
+.Notify {
+  margin-top: 25px;
+}
+form {
+  display: flex;
+  gap: 10px;
+}
+.input-wrapper {
+  display: flex;
+  flex-direction: column; /* stack input + message */
+}
+input[type="email"] {
+  width: 300px;
+  height: 2.5rem;
+  border-radius: 1rem;
+  border: 1px solid hsl(223, 100%, 88%);
+  padding: 10px;
+}
+input[type="email"]:focus {
+  border: 1px solid hsl(223, 87%, 63%);
+  outline: none;
+}
+
+input::placeholder {
+  color: hsl(223, 100%, 88%);
+}
+button {
+  height: 2.5rem;
+  padding: 10px 40px;
+
+  border-radius: 1rem;
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  border: none;
+  box-shadow: 3px 3px 5px hsl(223, 100%, 88%);
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  cursor: pointer;
+  background-color: hsl(223, 75%, 68%);
+}
+.message {
+  margin-top: 6px;
+  font-size: 14px;
+  font-style: italic;
+  text-align: left; /* so it aligns nicely under input */
+  padding-left: 10px; /* small indent */
+}
+.success {
+  color: green;
+}
+.error {
+  color: hsl(354, 100%, 66%);
+}
+
+.illustration {
+  margin-top: 50px;
+  width: 90%;
+  max-width: 500px;
+}
+.illustration img {
+  width: 100%;
+}
+.socials {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.icons {
+  display: flex;
+  gap: 30px;
+  margin-left: 20px;
+}
+.icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 59%);
+  text-decoration: none;
+  color: hsl(223, 87%, 63%);
+  transition: all 0.3s ease-in;
+}
+.icons a:hover {
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+}
+.copyright {
+  color: hsl(0, 0%, 59%);
+  font-size: 12px;
+}
+
+@media (max-width: 535px) {
+  form {
+    flex-direction: column;
+  }
+}
