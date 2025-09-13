@@ -19,5 +19,6 @@ This project features a subscription form with email validation and modern respo
 - Font Awesome (icons)
 
 ## 📸 Preview
-![Screenshot](https://github.com/user-attachments/assets/183da8e0-bf0b-44c5-888b-1744cf1a6b9d)  
+![Screenshot](https://github.com/user-attachments/assets/21e58101-07ba-4f05-baa7-4586fdef62fc)
+
 
